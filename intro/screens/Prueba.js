@@ -15,7 +15,7 @@ export default function Prueba() {
     return (
       <View style={styles.container}>
         <View style={styles.loaderContainer}>
-          <ActivityIndicator size="large" color="#2196F3" animating={false} hidesWhenStopped={true} />
+          <ActivityIndicator size="large" color="#2196F3" animating={true} hidesWhenStopped={true} />
           <Text>Cargando...</Text>
         </View>
       </View>
