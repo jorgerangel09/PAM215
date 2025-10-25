@@ -15,7 +15,7 @@ export default function ActivityIndicatorScreen() {
     return (
       <View style={styles.container}>
         <View style={styles.loaderContainer}>
-          <ActivityIndicator size="large" color="#2196F3" animating={true} hidesWhenStopped={true} />
+          <ActivityIndicator size="large" color="#6108d6ff" animating={true} hidesWhenStopped={true} />
           <Text>Cargando...</Text>
         </View>
       </View>

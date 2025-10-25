@@ -63,6 +63,7 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems:'center',
     padding:50,
+    backgroundColor:'#030000ff',
   },
   splashImage:{
     flex:1,

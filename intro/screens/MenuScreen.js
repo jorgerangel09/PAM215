@@ -10,6 +10,7 @@ import FlatListScreen from './FlatListScreen';
 import ModalScreen from './ModalScreen';
 import BottomSheetScreen from './BottomSheetScreen';
 import Prueba from './Prueba';
+import Repaso1 from './Repaso1';
 
 export default function MenuScreen() {
     const [screen,setScreen]=useState('menu');
@@ -35,6 +36,8 @@ export default function MenuScreen() {
             return <BottomSheetScreen/>;
         case 'Prueba':
             return <Prueba/>;
+        case 'Repaso1':
+            return <Repaso1/>;
         case 'menu':
             default:
                 return (
@@ -50,7 +53,8 @@ export default function MenuScreen() {
                 <Button color='#6a00ffff' onPress={()=>setScreen('FlatList')} title='Pract:FlatList'/>
                 <Button color='#6a00ffff' onPress={()=>setScreen('Modal')} title='Pract:Modal'/>
                 <Button color='#6a00ffff' onPress={()=>setScreen('BottomSheet')} title='Pract:BottomSheet'/>
-                <Button color='#6a00ffff' onPress={()=>setScreen('Prueba')} title='Pract:Prueba'/>
+                <Button color='#6a00ffff' onPress={()=>setScreen('Prueba')} title='Prueba'/>
+                <Button color='#6a00ffff' onPress={()=>setScreen('Repaso1')} title='Repaso 1'/>
                 </View>
                 </View>
                 )
