@@ -10,7 +10,9 @@ export default function Repaso1(){
     
     const mostrarAlert = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (nombre.trim() === ''){
+      if (nombre.trim() === '' && correo.trim() === '') {
+        Alert.alert('Error \n Por favor completa todos los campos.');
+      } else if (nombre.trim() === ''){
         Alert.alert('Error \n Falta completar el nombre.');
       } else if (correo.trim() === ''){
         Alert.alert('Error \n Falta completar el correo electrónico.');
@@ -76,7 +78,7 @@ export default function Repaso1(){
             trackColor = {{true: '#28e935ff', false: 'grey'}}
             />
             </View>
-            <Button color='#000000'
+            <Button color='#08018fff'
             title = 'Registrarse'
             onPress = {mostrarAlert}
             />
