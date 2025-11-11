@@ -52,7 +52,7 @@ export default function Repaso1(){
       }
         return (
           <ImageBackground style={styles.background}
-          source={require('../assets/fondorepaso1.jpeg')}
+          source={require('../assets/fondorepaso1.jpg')}
           resizeMode='cover'
           >
             <View style={styles.textoContainer}>

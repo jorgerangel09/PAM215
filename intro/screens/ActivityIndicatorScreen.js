@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import { View, Text, Button, ActivityIndicator, StyleSheet } from 'react-native';
+import React, { useState } from 'react';
 
 export default function ActivityIndicatorScreen() {
   const [loading, setLoading] = useState(false);
@@ -15,8 +15,12 @@ export default function ActivityIndicatorScreen() {
     return (
       <View style={styles.container}>
         <View style={styles.loaderContainer}>
-          <ActivityIndicator size="large" color="#6108d6ff" animating={true} hidesWhenStopped={true} />
-          <Text>Cargando...</Text>
+          <ActivityIndicator 
+          size="large" 
+          color="#6108d6ff" 
+          animating={true} 
+          hidesWhenStopped={true} />
+          <Text style={styles.texto}>Cargando...</Text>
         </View>
       </View>
     );
@@ -26,8 +30,7 @@ export default function ActivityIndicatorScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>ActivityIndicator</Text>
-      <Button title="Cargar datos" onPress={startLoading} />
-      <Text>Listo</Text>
+      <Button color='#9500ffff'title="Cargar datos" onPress={startLoading} />
     </View>
   );
 }
@@ -37,11 +40,17 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: '#000000ff',
   },
   title: {
     fontSize: 20,
     alignItems: 'center',
     justifyContent: 'center',
+    marginBottom: 20,
+    color:'#ffffff',
+  },
+  texto:{
+    color:'#ffffff',
   },
   loaderContainer: {
     alignItems: 'center',
